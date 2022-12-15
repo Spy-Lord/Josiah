@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 1, 0, 0.7);
+  position: sticky;
+  top: 0;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 30px 0px;
+}
+.navbar ul li {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.navbar ul li a {
+  color: azure;
+  padding: 7px 37px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+.navbar ul li a:hover {
+  background-color: skyblue;
+  color: black;
+  box-shadow: 0 0 8px white;
+}
+
+/* Home Section */
+.home {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 1, 0, 0.7);
+  height: 740px;
+  justify-content: center;
+  align-items: center;
+  color: skyblue;
+}
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(image/IMG_20210209_235140_615.jpg) no-repeat center/cover;
+  height: 800px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid skyblue; */
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.heading {
+  font-family: century;
+  font-size: 3rem;
+  text-align: center;
+  margin: 40px 0px;
+}
+.btn {
+  padding: 10px 40px;
+  background-color: transparent;
+  border: 1px solid lightblue;
+  color: skyblue;
+  outline: none;
+  transition: 0.5s ease;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: skyblue;
+  color: black;
+  box-shadow: 0 0 5px solid white, 0 0 10px white, 0 0 15px white;
+  font-weight: bold;
+}
+/* About Me */
+.about {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+.pic {
+  display: flex;
+}
+.pic img {
+  width: 575px;
+  height: 400px;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 10px;
+}
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* portfolio section */
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 1, 0, 0.9);
+  color: skyblue;
+  align-items: center;
+  padding: 20px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+.gallery img {
+  width: 360px;
+  height: 240px;
+  margin: 10px;
+}
+
+/* Service Section */
+.services {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 450px;
+  border: 2px solid black;
+  margin: 10px;
+  align-items: center;
+  text-align: justify;
+  padding: 10px;
+  border-radius: 15px;
+  background: linear-gradient(to top, rgb(45, 206, 255) 50%, white 50%);
+  background-size: 100% 200%;
+  transition: all 0.7s;
+}
+.box:hover {
+  background-position: left bottom;
+  color: white;
+  border: none;
+  box-sizing: 0 0 20px rgb(45, 255, 237);
+}
+.box img {
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  padding: 10px;
+}
+
+/* contact me */
+.contact-me {
+  width: 100%;
+  height: 290px;
+  background: #191919;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-me p {
+  color: skyblue;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.contact-me .button-two {
+  background-color: #00ffd5;
+  color: rgb(14, 13, 13);
+  text-decoration: none;
+  border: 2px solid skyblue;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+.contact-me .button-two:hover {
+  background-color: transparent;
+  border: 2px solid blue;
+  cursor: pointer;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: #101010;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  font-size: 30px;
+  color: lightblue;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.sml {
+  color: lightblue;
+  font-size: 17px;
+  text-align: center;
+  line-height: 26px;
+}
+
+.end {
+  position: absolute;
+  color: #f9004d;
+  bottom: 35px;
+  font-size: 14px;
+}
